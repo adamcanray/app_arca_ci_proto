@@ -1,0 +1,13 @@
+**&copy;2019 Adam Canray**
+
+SETELAH DI EKSTRAK, PINDAHKAN FOLDER INI KE FOLDER htdocs
+contoh: C:/xampp/htdocs
+----------------------------------------------------------
+-dokumentasi ada di folder
+  *documentation/index.html
+-config database
+  *documentation/database
+----------------------------------------------------------
+jalankan aplikasi
+1. buka aplikasi xampp, jalankan web server dan database server
+2. buka browser, ketikan localhost/app_arca_ci_proto/app_arca_ci , lalu enter.

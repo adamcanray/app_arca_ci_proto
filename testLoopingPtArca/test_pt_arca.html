@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Belajar Looping Javascript | coba</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .rata-kiri,
+      .rata-tengah,
+      .rata-kanan {
+        width: 100px;
+        border: 1px solid;
+        padding: 15px;
+      }
+      .footer {
+        text-align: center;
+        background-color: #eee;
+        padding: 10px 0px;
+        margin-top: 5em;
+        font-size: 1.25em;
+        font-family: "roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- rata kiri -->
+    <p>1. Rata Kiri</p>
+    <div class="rata-kiri">
+      <script>
+        // tampilkan document
+        // buat looping baris
+        // nilai j akan bertambah terus karena j++
+        // artinya setelah perulangan pertama maka akan menambah nilai j
+        //  dan selama nilai j masih dalam kondisi / contoh: j masih kurang atau samadengan 10, maka lakukan perulangan
+        // dan tambah lagi nilai j
+        for (h = 1; h <= 6; h++) {
+          // buat looping deratan
+          // looping ini artinya, i akan diulang sebanyak nilai dari j
+          // berarti karena awal nya j itu nilai nya 1,  maka akan print '*' satu
+          // berikutnya karena j++, bernilai 2, maka i akan diulnag sebanyak j yaitu 2 '**'
+          // begitu seterusnya
+          for (i = 1; i <= h; i++) {
+            // tampilkan document
+            document.write("*");
+          }
+          // tampilkan document
+          document.write("<br>");
+        }
+        // kedua
+        for (j = 1; j <= 5; j++) {
+          // nilai k = nilai j, berarti 10
+          // dan setiap perulangan nilai k akan berkurang 1
+          //
+          for (k = j; k <= 5; k++) {
+            document.write("*");
+          }
+          document.write("<br>");
+        }
+      </script>
+    </div>
+
+    <!-- rata tengah -->
+    <p>2. Rata Tengah</p>
+    <div class="rata-tengah">
+      <script>
+        for (l = 1; l <= 6; l++) {
+          for (m = l; m <= 5; m++) {
+            document.write("_");
+          }
+          for (o = 1; o <= l; o++) {
+            document.write("*");
+          }
+          for (p = 1; p <= l - 1; p++) {
+            document.write("*");
+          }
+          document.write("<br>");
+        }
+      </script>
+    </div>
+
+    <!-- rata kanan -->
+    <p>3. Rata Kanan</p>
+    <div class="rata-kanan">
+      <script>
+        for (q = 1; q <= 5; q++) {
+          for (r = q; r < 6; r++) {
+            document.write("_");
+          }
+          for (s = 1; s <= q; s++) {
+            document.write("*");
+          }
+          document.write("<br>");
+        }
+        for (t = 1; t <= 6; t++) {
+          for (u = 1; u < t; u++) {
+            document.write("_");
+          }
+          for (v = t; v <= 6; v++) {
+            document.write("*");
+          }
+          document.write("<br>");
+        }
+      </script>
+    </div>
+
+    <div class="footer">
+      <p>&copy;2019 Adam Canray.</p>
+    </div>
+  </body>
+</html>
